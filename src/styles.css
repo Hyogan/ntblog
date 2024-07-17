@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    /* background: red; */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+:root {
+    --primary-color : #000741;
+    --soft-primary-color : #000850ec;
+    --dark-primary-color : #04091e;
+}
+
+body {
+    background: #04091eab;
+}
+
+#blog-title{
+    font-size: calc(15px + 10vw);
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 4px;
+    color: transparent;
+    padding: 10px;
+}
