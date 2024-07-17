@@ -1,0 +1,102 @@
+section.categories {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 140px;
+    padding-inline: 20px;
+    padding-bottom: 100px;
+}
+
+section.categories h2 {
+    font-size: 8vw;
+    color: white;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+section.categories .section_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+}
+
+section.categories .category_item {
+    background-color: white;
+    width: 30%;
+    height: 450px;
+    flex-shrink: 0;
+    position : relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 15px;
+}
+
+section.categories .category_item:hover > img {
+    transform: scale(2,2);
+}
+section.categories .category_item:hover > .dark_overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.788));
+}
+section.categories .category_item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+    transition: .6s;
+}
+section.categories .category_item .dark_overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.37));
+    /* background: transparent; */
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+section.categories .category_item a{
+
+    z-index: 12;
+    padding: 12px 17px;
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+    transition: .52s;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: linear-gradient(75deg, var(--soft-primary-color), var(--primary-color));
+
+}
+
+section.categories .category_item a:hover {
+    background: var(--dark-primary-color);
+    color: white;
+    border-color: var(--dark-primary-color);
+    gap: 15px;
+}
+section.categories .category_item .name{
+    text-transform: uppercase;
+    font-size: 45px;
+    z-index: 12;
+    color: white;
+}
+
+section.categories .category_item p.description {
+    z-index: 12;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}

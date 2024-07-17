@@ -1,0 +1,68 @@
+@keyframes bounceit {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(14px);}
+    100% {transform: translateY(-14px);}
+}
+
+section.sign_block {
+
+    display: flex;
+    width: 80%;
+    min-height: 450px;
+    box-shadow: 2px 3px 4px 5px 6px#04091e;
+    background: rgb(4, 4, 41);
+    margin: 30px auto;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 50px;
+    gap: 10px;
+    padding: 15px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: bounceit 3s  ease-in-out infinite alternate both; */
+
+}
+section.sign_block  p  {
+    text-align: center;
+}
+
+section.sign_block form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+
+section.sign_block form label {
+    font-size: 17px;
+}
+
+section.sign_block form input, 
+section.sign_block form textarea {
+    padding: 10px 15px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+section.sign_block form button {
+    padding: 13px 25px;
+    background: none;
+    color: white;
+    transition: .6s;
+    cursor: pointer;
+    border: none;
+    border: 2px solid white;
+}
+
+section.sign_block form button:hover {
+    background: white;
+    color: #04091e;
+    transform: translateY(-7px);
+}
+

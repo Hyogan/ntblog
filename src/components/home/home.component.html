@@ -1,7 +1,7 @@
 <main class="flex flex-col w-full text-center justify-around items-center text-white">    
     <section class="hero_section">
         <img src="logo/logoDark.png" alt="">
-        <a href="#" >Entrer</a>
+        <a href="/articles" >Entrer</a>
     </section>
       <section class="most_popular_articles">
         <article class="article_item_small">
@@ -65,29 +65,9 @@
             </article>
         </section>  
 
-        <section class="contact_us">
-            <h1>CONTACT US  </h1>
-            <p>Needs, worrining, encouragement , tell us something, we are here for it !</p>
-            <form formGroup="contactForm">
-                    <!-- FIRST NAME -->
-                <label for="first-name"> First Name</label>
-                <input type="text"  id="first-name" formControlName="firstName">
+        <app-contact-us></app-contact-us>
 
-                <!-- LAST NAME -->
-                <label for="last-name"> Last Name</label>
-                <input type="text"  id="last-name" formControlName="lastName">
-
-                <!-- EMAIL ADRESS -->
-                <label for="firstname"> Email Adress</label>
-                <input type="text"  id="first-name" formControlName="email">
-
-                 <!-- MESSAGE-->
-                 <label for="message"> Message</label>
-                 <input type="text"  id="message" formControlName="message">
-
-                 <button type="submit" [disabled]="!contactForm.valid">Submit</button>
-            </form>
-        </section>
+      
 </main>
 
 

@@ -1,5 +1,7 @@
 <section class="main-articles">
-        <h2 class="section-title">ARTICLES MOST LOVED BY OUR READERS</h2>
+        <div class="section-title-block">
+            <h2 class="section-title">ARTICLES MOST LOVED BY OUR READERS</h2>
+        </div>
         <ul class="categories-list">
             <li class="active"> <a href="#">ALL</a></li>
             <li > <a href="#">Turorials</a></li>
@@ -30,6 +32,13 @@
             <app-article *ngFor="let item of articleList " [article]="item"></app-article>
         </div>
         <div class="nav-buttons">
-
+            <a href="#" class="newer_post">
+                <i class="fa-solid fa-less-than"></i>
+                <span>Newer post</span>
+            </a>
+            <a href="#" class="older_post">
+                <span>Older post</span> 
+                <i class="fa-solid fa-greater-than"></i>
+            </a>
         </div>
-    </section>
+</section>

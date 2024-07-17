@@ -1,0 +1,16 @@
+
+<section class="categories">
+   <h2 class="section_title">What we can offer</h2>
+
+   <div class="section_content">
+        <article class="category_item" *ngFor="let item of categories">
+            <div class="dark_overlay"></div>
+            <h4 class="name">{{item.name}}</h4>
+            <img src="assets/images/pc1.jpg" [alt]="item.name">
+            <a [href]="item.path">view more</a>
+            <p class="description">{{item.description}}</p>
+        </article>
+   </div>
+
+   
+</section>

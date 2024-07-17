@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormGroup,FormControl } from '@angular/forms';
 import { FooterComponent } from '../footer/footer.component';
+import { ContactUsComponent } from '../contact-us/contact-us.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterComponent],
+  imports: [FooterComponent,ContactUsComponent],
   // template: `
   //   <main class="flex flex-col w-full text-center justify-around items-center text-white">    
   //     <img src="logo/logoDark.png" alt="">
@@ -23,13 +24,5 @@ import { FooterComponent } from '../footer/footer.component';
 // </section>
 export class HomeComponent {
 
-  // formGroup : FormGroup = []
-  contactForm = new FormGroup({
-    firstName : new FormControl(''),
-    lastName : new FormControl(''),
-    email : new FormControl(''),
-    message : new FormControl('')
-  });
-  
 
 }

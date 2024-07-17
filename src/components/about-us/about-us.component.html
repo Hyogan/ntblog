@@ -1,0 +1,114 @@
+<section class="about_me">
+    <div class="socials">
+        <span className="white-block"></span>
+        <a href="#" class="social_link"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social_link"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social_link"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="social_link"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="who_am_i">
+        <img src="assets/images/pc1.jpg" alt="">
+        <div class="infos">
+            <h4 class="section_title">Im nelson Tiagho</h4>
+            <p class="position">And i am a web and mobile dev</p>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque odio vitae error repellat quis quasi, blanditiis voluptates perferendis deleniti sequi distinctio? Quia quisquam ab nostrum ducimus fugiat vitae quo sed labore ipsam similique dolorem cupiditate, dicta, dolores voluptatibus adipisci in sit sint eaque. Possimus quam explicabo autem doloremque quae ipsum nam provident aut nemo magnam veniam quaerat est voluptas, eaque doloribus ut deserunt sunt consectetur aspernatur libero vero b</p>
+        </div>
+    </div>
+</section>
+<app-contact-us></app-contact-us>
+
+
+
+<style>
+    section.about_me {
+        min-height: 100vh;
+        position: relative;
+        width: 100%;
+        padding-top: 140px;
+        /* background: red; */
+    }
+    section.about_me .socials {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 10;
+        right: 2%;
+        top: 150px;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        width: fit-content;
+    }
+
+    section.about_me .socials span{
+        width: 4px;
+        height: 170px;
+        background: white;
+    }
+
+    section.about_me .socials a {
+        color: white;
+        font: bold;
+        background: #374754;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .6s;
+    }
+
+    section.about_me .socials a:hover {
+        color: #232d3d;
+        background: white;
+    }
+
+            /* 
+                    WHO AM I SECTION
+            */
+    section.about_me .who_am_i  {
+        padding: 25px;
+        display: flex;
+        gap: 25px;
+    }
+    section.about_me .who_am_i .infos {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section.about_me .who_am_i .section_title {
+        font-size: 5vw;
+        text-transform: uppercase;
+        color: var(--primary-color);
+    }
+    section.about_me .who_am_i .position {
+        color: white;
+        font-size: 25px;
+        max-width: 80%;
+        text-transform: uppercase;
+    }
+    section.about_me .who_am_i .description {
+        text-indent: 45px;
+        text-align: justify;
+        color: white;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    section.about_me .who_am_i img {
+        width: 550px;
+        height: 350px;
+        flex-shrink: 0;
+        object-fit: cover;
+        animation: bounceit 2s  ease-in-out infinite alternate both;
+    }
+
+    @keyframes bounceit {
+        0% {transform: translateY(0px);}
+        50% {transform: translateY(14px);}
+        100% {transform: translateY(-14px);}
+    }
+
+
+</style>

@@ -10,14 +10,14 @@ import { Component } from '@angular/core';
       <img src="logo/logoDark.png">
       <nav class=""> 
         <a class="" href="/">Home</a>
-        <a class="" href="articles">Articles</a>
-        <a class="" href="Home">Category</a>
-        <a class="" href="Home">About</a>
-        <a class="" href="Home">Contact</a>
+        <a class="" href="/articles">Articles</a>
+        <a class="" href="/categories">Categories</a>
+        <a class="" href="/about-us">About</a>
+        <a class="" href="/article/details/slug">Contact</a>
       </nav>
       <div class="auth_links">
-        <a class="" href="">signUp</a>
-        <a class="" href="">signIn</a>
+        <a class="" href="user/signup">signUp</a>
+        <a class="" href="user/signin">signIn</a>
       </div>
     </header>
     <header [class.opened]="isOpen" class="mobile">
@@ -25,13 +25,13 @@ import { Component } from '@angular/core';
       <nav class="nav_links">
         <a href="/">Home</a>
         <a href="/articles">Articles</a>
-        <a href="/">Category</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
+        <a href="/categories">Category</a>
+        <a href="/about-us">About</a>
+        <a href="/article/details/slug">Contact</a>
       </nav>
       <div class="auth_links">
-        <a href="#">Signup</a>
-        <a href="#">Signin</a>
+        <a href="user/signup">Signup</a>
+        <a href="user/signin">Signin</a>
       </div>
     </header>
   <div [class.open]="isOpen" class="local_header_mobile"> 
