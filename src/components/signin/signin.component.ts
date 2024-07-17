@@ -7,7 +7,7 @@ import { FormControl, FormGroup } from '@angular/forms';
   imports: [],
   template: `
     <section class="sign_block">
-            <h1>SIGN IN </h1>
+            <h1 class="section_title">SIGN IN </h1>
             <p>Connect and join the funniest comments from your tech friends, <br>  Come back to the tech world</p>
             <form formGroup="signInForm">
                     <!-- PSEUDO NAME -->

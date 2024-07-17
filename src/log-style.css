@@ -25,6 +25,9 @@ section.sign_block {
     /* animation: bounceit 3s  ease-in-out infinite alternate both; */
 
 }
+section.sign_block .section_title {
+    font-size: 45px;
+}
 section.sign_block  p  {
     text-align: center;
 }

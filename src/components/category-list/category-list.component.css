@@ -100,3 +100,31 @@ section.categories .category_item p.description {
     color: white;
     font-weight: bold;
 }
+
+
+@media screen and (max-width : 1350px) {
+    section.categories .section_content h4.name{
+        font-size: calc(4vw + 4px);
+    }
+}
+@media screen and (max-width : 1250px) {
+    section.categories .section_content .category_item{
+        width: 40%;
+    }
+}
+@media screen and (max-width : 790px) {
+    section.categories .section_content .category_item{
+        width: 70%;
+    }
+    section.categories .section_content .category_item h4.name {
+
+        font-size: calc(7vw + 4px);
+    }
+}
+
+@media screen and (max-width : 520px) {
+    section.categories .section_content .category_item{
+        width: 100%;
+        
+    }
+}

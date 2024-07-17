@@ -6,13 +6,14 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 6px 45px;
+    padding: 6px 70px;
     top: 25px;
     margin: 0 auto;
     border-radius: 10px;
 
     z-index: 999;
     width: fit-content;
+    gap: 6%;
     background: #04091e;
     
 }
@@ -25,7 +26,7 @@ header nav {
 header nav a {
 
     position : relative;
-    margin-inline: 4px;
+    margin-inline: 2px;
 }
 header nav a:hover {
     color: blue;
@@ -51,7 +52,7 @@ header a {
 header .auth_links a{
     text-transform: uppercase;
     background: white;
-    margin-inline: 4px;
+    margin-inline: 2px;
     color: #04091e;
     transition: .6s;
     box-shadow: 2px 4px 4px #000018;

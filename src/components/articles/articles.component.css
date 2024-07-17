@@ -7,16 +7,18 @@
     padding-inline: 20px;
     padding-bottom: 100px;
 }
-.main-articles .section-title-block {
+.main-articles .section_title_block {
     width: 100%;
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.679),rgba(0, 0, 0, 0.582)),url("../../../public/assets/images/pc2.jpg") ;
     /* background: url("../../../public/logo/logoLightBg.png") ; */
     background-size: cover;
+    padding: 20px 0;
 }
-.main-articles h2 {
+.main-articles h2.section_title {
     color: white;
     /* color: var(--primary-color); */
-    font-size: calc(10vw);
+    text-align: center;
+    font-size: calc(4vw + 4px);
     max-width: 100%;
     margin-bottom: 10px;
 }
